@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Paul Ukaegbu | The Software Developer</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script>
+      $(function(){
+        $('h1').click(function(){
+          alert('Hello!')
+        })
+
+        $("#profile").click(function(){
+        var div = $(".pic");
+        div.animate({height: '500px', opacity: '0.4'}, "slow");
+        div.animate({width: '700px', opacity: '0.8'}, "slow");
+        div.animate({height: '500px', opacity: '0.4'}, "slow");
+        div.animate({width: '500px', opacity: '1.0'}, "slow");
+        })
+
+        .thumbnail:hover {
+          transform: scale(1.5); 
+        }
+      })
+    </script> 
+
+  </head>
+  
+  <body id="container">
+   
+
+    <div id="wrapper">
+
+      <header id="myHeader">          
+        <ul  id="nav">
+          <li>
+            <a class="home" href="Home.html">Home</a>
+            <a class="home" href="Portfolio.html">Portfolio</a>
+          </li>
+          <li><h1>PAUL UKAEGBU | <span class="dev">FULL STACK DEVELOPER</span></h1></li>
+          <li>
+            <a class="thumbnail" href="https://github.com/Paul-py07" alt="Git hub" target="_blank"><img src="./image/github.jpg" width="30px"/></a>
+            <a class="thumbnail" href="https://www.linkedin.com/in/paul-ukaegbu-b40366a5/" alt="linkedin" target="_blank"><img src="./image/link.png" width="30px"/></a>
+          </li>
+        </ul>
+      </header>
+    
+
+    <video autoplay muted loop id="myVideo" style="width: 80%; height: 100%;">
+      <source src="./image/videoplayback (1).mp4" type="video/mp4">
+    </video>
+
+    <main>
+        <div id="profile">
+          <img class="pic" src="./image/PSX_20200228_023322.jpg" alt="Paul Ukaegbu" style="width: 400px;" />
+        </div>
+
+        <div id="aboutMe">
+          <h3>About Me</h3>
+          <P>
+            Hello! I'm Paul, a software engineer living in Chicago, IL who enjoys building cool pages that live on the internet. I develop exceptional websites and web apps that provide intuitive, user interfaces with efficient and modern backends.
+
+            Shortly after graduating from high school, I attended SIUC where I studied mechanical engineering and aviation flight. I did one year at the university and joined the US Navy were I served as a mechanical engineer.
+          </P>
+
+        </div>
+
+        <div id="skills">
+          <ul class="lingo">
+            <li><img src="./image/httml.png" alt="css"></li>
+            <li><img src="./image/css3-512.png" alt="css"></li>
+            <li><img src="./image/javascript.png" alt="javascript"></li>
+            <li><img src="./image/csharp.png" alt="csharp"></li>
+            <li><img src="./image/python.png" alt="python"></li>
+          </ul>
+        </div>
+        
+        <div class="container">
+            <div class="card" style="width: 30rem; display: inline-block;">
+                <img src="./image/horizon1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Portfolio</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                        content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        
+            <div class="card" style="width: 30rem; display: inline-block;">
+                <img src="./image/website2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Portfolio</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                        content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        
+            <div class="card" style="width: 30rem; display: inline-block;">
+                <img src="./image/website3.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Portfolio</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                        content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+      
+
+        
+
+    </main>
+  </div>
+
+        <!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
