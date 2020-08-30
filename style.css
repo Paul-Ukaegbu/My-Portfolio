@@ -40,7 +40,6 @@ header h6{
 .nav {
     position: fixed;
     z-index: 5;
-    /* left: -20em; */
     display: flex;
     height: 100%;
     padding-left: 0rem;
