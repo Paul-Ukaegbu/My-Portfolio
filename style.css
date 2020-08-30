@@ -7,6 +7,7 @@
 
 body{
     /* background: linear-gradient(to right, rgb(241, 14, 6) , rgb(55, 2, 243)); */
+    background-color: black;
 }
 
 /* ---------header--------- */
@@ -16,6 +17,7 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 1%;
+    background-color: white;
 }
 
 nav img{
@@ -33,6 +35,68 @@ h6{
     text-shadow: 2px 2px 4px #35333365;
 }
 
+.nav {
+    position: fixed;
+    z-index: 5;
+    left: -18em;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding-left: 5rem;
+    padding-right: 2rem;
+    /* background: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-6/nav_background.png") center center repeat; */
+    font-family: "Proza Libre", serif;
+    font-size: 18px;
+    line-height: 2.2;
+    font-weight: bold;
+    color: #142033;
+    transition: left 200ms ease 200ms;
+    background-color: white;
+    /* border: 1px solid black; */
+  
+  }
+  
+  .nav:hover {
+    left: 0;
+  }
+  
+  .nav .hover-content {
+    margin-right: 3em;
+  }
+  
+  .nav h2 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 2.2em;
+    font-weight: bold;
+    color: black;
+  }
+  
+  .nav h3 {
+    padding-bottom: 1.1em;
+  }
+  
+  .nav ol {
+    list-style: upper-roman outside;
+  }
+  
+  .nav a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 100ms ease-in 100ms;
+  
+  }
+  
+  .nav a:hover,
+  .nav a.active {
+    color: red;
+  }
+
+  .about-me{
+    margin: 0 auto;
+    height: 200px;
+    border-radius: 10px; 
+  }
+
 /* -----------main------------- */
 
 main{
@@ -41,7 +105,11 @@ main{
 }
 
 main h1{
-    font-family: 'Lobster';
+    font-family: 'open sans';
+}
+
+main img{
+  margin: 6% auto;
 }
 
 h4 {
@@ -64,7 +132,7 @@ h4 {
   
   @keyframes animated-text{
     from{width: 0;}
-    to{width: 43%;}
+    to{width: 45%;}
   }
   
   /* cursor animations */
@@ -73,3 +141,5 @@ h4 {
     from{border-right-color: rgba(252, 6, 6, 0.75);}
     to{border-right-color: transparent;}
   }
+
+
